@@ -1,6 +1,7 @@
 package com.example.foodapp
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -42,6 +43,13 @@ class MainActivity : AppCompatActivity() {
             var foodView = inflater.inflate(R.layout.food_ticket,null)
             foodView.ivFood.setImageResource(foodinst.image!!)
             foodView.tvName.text = foodinst.name
+            foodView.setOnClickListener{
+                val intent = Intent(context, FoodDetails::class.java)
+                intent.putExtra("name",foodinst.name)
+                intent.putExtra("des",foodinst.des)
+                intent.putExtra("image",foodinst.image!!)
+                context!!.startActivity(intent)
+            }
 
         return foodView
         }
