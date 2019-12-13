@@ -9,9 +9,12 @@
     tools:context=".MainActivity">
 
     <GridView
+        android:horizontalSpacing="5pt"
+        android:verticalSpacing="5pt"
         android:id="@+id/gvFoodList"
         android:layout_width="match_parent"
         android:columnWidth="60pt"
-        android:numColumns="3"
-        android:layout_height="match_parent" />
+        android:numColumns="auto_fit"
+        android:layout_height="match_parent"
+        />
 </LinearLayout>
