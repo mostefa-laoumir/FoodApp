@@ -9,7 +9,9 @@
     tools:context=".MainActivity">
 
     <GridView
-        android:id="@+id/gv"
+        android:id="@+id/gvFoodList"
         android:layout_width="match_parent"
+        android:columnWidth="60pt"
+        android:numColumns="3"
         android:layout_height="match_parent" />
 </LinearLayout>
