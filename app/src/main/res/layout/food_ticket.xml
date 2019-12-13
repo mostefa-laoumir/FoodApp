@@ -14,13 +14,13 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/ivFood"
             android:layout_width="50pt"
             android:layout_height="50pt"
             app:srcCompat="@drawable/espresso" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Coffee"
