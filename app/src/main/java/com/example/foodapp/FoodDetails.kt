@@ -11,7 +11,7 @@ class FoodDetails : AppCompatActivity() {
         setContentView(R.layout.activity_food_details)
         val budnle = intent.extras
         ivImage.setImageResource(budnle!!.getInt("image"))
-        tvName.text = budnle.getString("des")
+        tvName.text = budnle.getString("name")
         tvDes.text = budnle.getString("des")
 
     }
